@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Homepage</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chat.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='chat.js') }}"></script>
+</head>
+<div class="home">
+    <h1>Plug & Play Chatbot using Tensorflow</h1>
+</div>
+    <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+		<i class="material-icons">chat</i>
+	</div>
+    <div class="chat-box" id="chat-box">
+        <div class="chat-box-header">
+            Tensorflow ChatBot
+            <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+        </div>
+
+        <div class="chat-box-body" id="chat-box-body">
+            <div class="chat-box-overlay"></div>
+            <div class="chat-logs"></div>
+        </div>
+        <div class="chat-input-body" id="chat-input-body">
+            <input type="text" id="chat-input" name="msgText" placeholder="Send a message..."/>
+            <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+        </div>
+    </div>
+</body>
+</html>
